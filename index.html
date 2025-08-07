@@ -5,7 +5,207 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+}
+
+.featured{
+    width: 100%;
+    height: auto;
+    background-color: #ff5100;
+}
+.hd-menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end;
+    
+}
+.hd-menu p{
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0px;
+    
+}
+.hd-menu ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hd-menu ul li{
+    
+}
+
+.nav{
+padding: 32px 0px;
+}
+
+.hd-outline{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.hd-primary{
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.text-img{
+    position: relative;
+    padding: 0px;
+}
+
+.hero-left img{
+    height: 450px !important;
+    width: 250px !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.hero-right img{
+    height: 450px !important;
+    width: 250px !important;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.hero-content{
+    padding: 64px 0px;
+}
+.main-content{
+    width: 60%;
+    text-align: center;
+    margin: 0px auto;
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    line-height: 56px;
+}
+.hero-search{
+     margin: 0px auto;
+     display: flex;
+     justify-content: center;
+     gap: 24px;
+     padding: 50px 25px;
+
+}
+.main-location{
+    background-color: white;
+    padding: 20px 25px;
+    border-radius: 16px;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.main-location input{
+    border: none;
+    width: 300px;
+}
+.add {
+    width: 100%;
+}
+input:focus,
+select:focus {
+  outline: none;
+  border: none; /* or your custom border */
+  box-shadow: none; /* if any shadow applied on focus */
+}
+
+</style>
 <body>
+    <!-- featured Content -->
+    <main>
+      <!-- Header -->
+      <div class="featured">
+        <div class="container">
+          <div class="row nav">
+            <div class="col-5">
+              <img
+                src="/img/swiggy_logo_white.avif"
+                width="150px"
+                alt="brand-logo"
+              />
+            </div>
+            <div class="col-7 hd-menu d-none d-lg-flex">
+              <p>Swiggy Corporate</p>
+              <p>Partner with us</p>
+              <button class="hd-outline">Get the App</button>
+              <button class="hd-primary">Sign in</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search  -->
+        <div class="container-fluid text-img" style="padding: 0px">
+          <div class="hero-left d-none d-lg-block">
+            <img src="/img/hero-left.avif" alt="" />
+          </div>
+          <div class="hero-content">
+            <div class="main-content">
+              Order food & groceries. Discover best restaurants. Swiggy it!
+            </div>
+            <div class="hero-search d-block d-lg-flex">
+              <div class="main-location">
+                <img src="location.svg" alt="arrow" />
+                <input type="text" placeholder="Enter your delivery location" />
+                <img
+                  src="arrow-down-sign-to-navigate (2).png"
+                  alt="arrow"
+                  width="16px"
+                  height="auto"
+                />
+              </div>
+              <div class="main-location mt-3 mt-lg-0">
+                <div class="add">
+                  <input
+                    type="text"
+                    placeholder="Search for restaurant, item or more"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-right d-none d-lg-block">
+            <img src="/img/hero-right.avif" alt="" />
+          </div>
+        </div>
+        <!-- image content  -->
+      
+      <div class="container">
+        <div class="row hd-img d-block d-lg-flex">
+          <div class="col-4"><img src="/img/img1.avif" alt=""  width="403px"/></div>
+          <div class="col-4"><img src="/img/img2.avif" alt="" width="403px" /></div>
+          <div class="col-4"><img src="/img/img3.avif" alt="" width="403px" /></div>
+        </div>
+      </div>
+      </div>
+    </main>
     
 </body>
 </html>
